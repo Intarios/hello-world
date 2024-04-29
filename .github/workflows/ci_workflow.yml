@@ -19,7 +19,7 @@ jobs:
   build:
     name: Build
     # The type of runner that the job will run on
-    runs-on: ubuntu-latest
+    runs-on: self-hosted
 
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
@@ -34,21 +34,21 @@ jobs:
 
   tests:
     name: Tests
-    runs-on: ubuntu-latest
+    runs-on: self-hosted
     steps:
       - name: Tests
         run: echo ... tests success
 
   deploy:
     name: Deploy
-    runs-on: ubuntu-latest
+    runs-on: self-hosted
     steps:
       - name: Deploy
         run: echo ... deploy success
         
   clean-up:
     name: Clean up
-    runs-on: ubuntu-latest
+    runs-on: self-hosted
     steps:
       - name: Clean up
         run: echo ... clean up success
