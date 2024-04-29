@@ -4,18 +4,26 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-                echo 'Building...'
+                echo 'Build success'
+                //check node version
+                sh 'node -v'
             }
         }
         stage('Test') {
             steps {
-                echo 'Testing...'
+                echo 'Test success'
             }
         }
         stage('Deploy') {
             steps {
-                echo 'Deploying...'
+                echo 'Deploy success'
             }
         }
+        stage('Clean up') {
+            steps {
+                echo 'Clean up success'
+            }
+        }
+
     }
 }
