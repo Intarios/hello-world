@@ -29,6 +29,8 @@ jobs:
       # Runs a single command using the runners shell
       - name: Build
         run: echo ... build success
+      - name: Check node version
+        run: node -v
 
   tests:
     name: Tests
